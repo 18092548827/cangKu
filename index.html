@@ -1,29 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/css.css">
-    
+    <link rel="stylesheet" href="./css/css-gy.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="./js/jQuery.js"></script>
+    <link rel="stylesheet" href="./css/mz.css">
+    <link rel="stylesheet" href="./css/xiangYingShi.css">
 </head>
+
 <body>
     <div class="header">
-        <div class="top">
-            <p>欢迎来到懂你商城</p>
-            <ul>
-                <li><a href="#">我的订单</a></li>
-                <li><a href="#">购物车</a></li>
-                <li><a href="#">收藏夹</a></li>
-                <li><a href="#">联系客服</a></li>
-                <li><a href="#">投诉建议</a></li>
-                
-            </ul>
-            <div class="login">
-                <a href="#">登录</a>
-                <a href="#">注册</a>
+        <div class="top container">
+            <p class="left pull-left">欢迎来到<a href="">懂你商城！</a></p>
+            <div class="pull-right">
+                <ul class="pull-left">
+                    <li class="pull-left"><a href="#">我的订单</a></li>
+                    <li class="pull-left"><a href="#">购物车</a></li>
+                    <li class="pull-left"><a href="#">收藏夹</a></li>
+                    <li class="pull-left"><a href="#">联系客服</a></li>
+                    <li class="pull-left"><a href="#">投诉建议</a></li>
+                </ul>
+                <div class="login pull-right logina">
+                    <a href="./login.html" class="a1">登录</a>
+                    <p class="a2">/</p>
+                    <a href="./zhuce.html" class="a3">免费注册</a>
+                </div>
             </div>
         </div>
     </div>
+    <div class="centerlogo container ">
+        <a href="#" class="logo pull-left">
+            <img src="./images/logo.png" alt="">
+            <p>dongni.com</p>
+        </a>
+        <div class="input col-lg-6 pull-left">
+            <input type="text" placeholder="请输入您想要的宝贝">
+            <div class="icon">
+                <span class="iconfont"></span>
+            </div>
+        </div>
+        <div class="qe pull-right hidden-sm"><img src="./images/qe.jpg" alt=""></div>
+    </div>
+    <div class="nav container">
+        <div class="pull-left fenlei col-lg-3">
+            <div class="tit">
+                <span class="iconfont"></span>
+                <span>宝贝分类</span>
+            </div>
+            <ul class="ul1" style="height: 440px;">
+                <li class="jian"><</li>
+                <li>
+                    <ul class="ul2">
+                        <div>
+
+                        </div>
+                    </ul>
+                </li>
+                <li class="jian">></li>
+            </ul>
+        </div>
+        <div class="lunBo pull-left col-lg-9">
+            <ul class="daohang cf">
+                <li class="pull-left"><a href="#">首页</a></li>
+                <li class="pull-left"><a href="#">每日特价</a></li>
+                <li class="pull-left"><a href="#">限时秒杀</a></li>
+                <li class="pull-left"><a href="#">大牌特惠</a></li>
+                <li class="pull-left"><a href="#">超值精选</a></li>
+            </ul>
+            <div id="carousel-example-generic" class="carousel slide banner" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators ">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner bannerTu" role="listbox">
+
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"
+                    id="btnleft">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style=""></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"
+                    id="btnright">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="tejia">
+        <div class="container">
+            <h1>精品特价</h1>
+            <div class="jkj tj cf">
+                <div class="cf">
+                    <h2 class="col-lg-4 cf"><span class="iconfont"></span>九块九限时秒杀区<small></small></h2>
+                </div>
+                <div class="xq xq1 cf">
+
+                </div>
+            </div>
+            <div class="sjkj tj cf">
+                <div class="cf">
+                    <h2 class="col-lg-4 cf"><span class="iconfont"></span>十九块九限时秒杀区<small></small></h2>
+                </div>
+                <div class="xq2 xq">
+
+                </div>
+            </div>
+            <div class="tj cf">
+                <div class="cf">
+                    <h2 class="col-lg-4 cf"><span class="iconfont"></span>限时特价秒杀区<small></small></h2>
+                </div>
+                <div class="xq3 xq">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container footer cf">
+            <div>
+                <a href="#">关于我们</a>
+                <span>|</span>
+                <a href="#">联系我们</a>
+                <span>|</span>
+                <a href="#">人才招聘</a>
+                <span>|</span>
+                <a href="#">商家入驻</a>
+                <span>|</span>
+                <a href="#">广告服务</a>
+                <span>|</span>
+                <a href="#">手机懂你</a>
+                <span>|</span>
+                <a href="#">友情链接</a>
+                <span>|</span>
+                <a href="#">销售联盟</a>
+                <span>|</span>
+                <a href="#">懂你社区</a>
+                <span>|</span>
+                <a href="#">懂你公益</a>
+            </div>
+            <div>
+                <p style="color: #fff;">Copyright 2004-2020 懂你LM.com 版权所有</p>
+            </div>
+        </div>
+    </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script> -->
+<script src="./js/index.js"></script>
+
+
 </html>

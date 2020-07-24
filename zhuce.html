@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/css-gy.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/mz.css">
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/zhuce.js"></script>
+    <script src="./js/base64.js"></script>
+    <script src="./js/md5.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="top container">
+            <p class="left pull-left">欢迎来到<a href="">懂你商城！</a></p>
+            <div class="pull-right">
+                <ul class="pull-left">
+                    <li class="pull-left"><a href="#">我的订单</a></li>
+                    <li class="pull-left"><a href="#">购物车</a></li>
+                    <li class="pull-left"><a href="#">收藏夹</a></li>
+                    <li class="pull-left"><a href="#">联系客服</a></li>
+                    <li class="pull-left"><a href="#">投诉建议</a></li>
+
+                </ul>
+                <div class="login pull-right">
+                    <a href="#">登录</a>
+                    <p>/</p>
+                    <a href="#">免费注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="centerlogo container ">
+        <a href="#" class="logo pull-left">
+            <img src="./images/logo.png" alt="">
+            <p>dongni.com</p>
+        </a>
+        <div class="qe pull-right"><img src="./images/qe.jpg" alt=""></div>
+    </div>
+    <div class="login-back">
+        <div class="container ">
+            <div class="pull-right">
+                <h3>用户注册</h3>
+                <div class="message login-back1">
+                    <div class="input">
+                        <span class="iconfont"></span>
+                        <input type="text" placeholder="请输入账号（3-16位）" id="userName">
+                        <p>账号格式不正确!</p>
+                    </div>
+                    <div class="input">
+                        <span class="iconfont"></span>
+                        <input type="text" placeholder="请输入手机号" id="phone">
+                        <p>手机号格式不正确!</p>
+                    </div>
+                    <div class="input">
+                        <span class="iconfont"></span>
+                        <input type="text" placeholder="请输入邮箱" id="email">
+                        <p>邮箱格式不正确!</p>
+                    </div>
+                    <div class="pass input">
+                        <span class="iconfont"></span>
+                        <input type="password" placeholder="请输入密码（6-18位）" id='password'>
+                        <p>密码格式不正确!</p>
+                        <i id='eye'></i>
+                    </div>
+                    
+                </div>
+                <button class="login-back1 button" style="margin-top: 50px;">立即注册</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container footer cf">
+            <div>
+                <a href="#">关于我们</a>
+                <span>|</span>
+                <a href="#">联系我们</a>
+                <span>|</span>
+                <a href="#">人才招聘</a>
+                <span>|</span>
+                <a href="#">商家入驻</a>
+                <span>|</span>
+                <a href="#">广告服务</a>
+                <span>|</span>
+                <a href="#">手机懂你</a>
+                <span>|</span>
+                <a href="#">友情链接</a>
+                <span>|</span>
+                <a href="#">销售联盟</a>
+                <span>|</span>
+                <a href="#">懂你社区</a>
+                <span>|</span>
+                <a href="#">懂你公益</a>
+            </div>
+            <div>
+                <p style="color: #fff;">Copyright  2004-2020  懂你LM.com 版权所有</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    var flag = true;
+    $('#eye').click(function () {
+        if (flag) {
+            document.getElementById('password').type = 'text';
+            $(this).addClass('open');
+            flag = false;
+            return;
+        }
+        document.getElementById('password').type = 'password';
+        $(this).removeClass('open');
+        flag = true;
+    })
+</script>
+
+</html>

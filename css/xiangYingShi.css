@@ -1,0 +1,23 @@
+@media screen and (max-width:992px){
+    .login-back{
+        background-image: linear-gradient(to left, #fff , #fff,#fff);
+    }
+    .login-back .container>.pull-right{
+        height: 600px;
+        background-color: #fff;
+        margin-top: 20px;
+        box-shadow: none;
+        width: 100%;
+    }
+    .login-back button {
+        width: 45%;
+        margin: 0 auto;
+        border: none;
+        outline: none;
+        background-color: #fd683b;
+        padding: 10px 0;
+        color: #fff;
+        font-size: 19px;
+        border-radius: 25px;
+    }
+}
